@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: 'Open Sans', serif; */
+    font-family: 'Josefin Sans', sans-serif;
+    color: #535454;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+    background-color: #5a2be2;
+    color: white;
+    height: 3vh;
+    flex: 1 100%;
+}
+
+.header-title {
+    flex: 1;          /* shorthand for: flex-grow: 1, flex-shrink: 1, flex-basis: 0 */
+    display: flex;    
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-middle {
+    flex: 1;
+    opacity: 0;
+}
+
+.header-title-empty-space{
+    flex: 1;
+}
+
+.header-title-text{
+    flex: 1;
+}
+
+.right-header {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-header .fa {
+    font-size: 1.5rem;
+}
+
+.right-header .fa {
+    margin-left: 0.6rem;
+}  
+
+main {
+    margin: 0;
+    height: 87vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 610px) 
+{
+    main aside {
+        display: flex;
+        flex-flow: column wrap;
+        flex: 1;
+        justify-content: flex-start;
+        align-items: center;
+        /* background-color: #221; */
+        height: 30vh;    
+        background-color: #615e5e;
+    }
+    
+    app-home-page {
+        flex: 3;
+        display: flex;
+        flex-flow: column;
+        padding-top: 3vh;
+        /* height: 90vh; */
+    }
+
+    .typewriter {
+        display: none;
+    }
+
+    .nav-contact {
+        display: none !important;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 610px) {   
+
+    main aside {
+        display: flex;
+        flex-flow: column wrap;
+        flex: 1;
+        justify-content: flex-start;
+        align-items: center;
+        /* background-color: #221; */
+        height: 100vh;    
+        background-color: #615e5e;
+    }
+
+    app-home-page {
+        flex: 3;
+        display: flex;
+        flex-flow: row wrap;
+        height: 90vh;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) { }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) { }
+
+.middle {
+    flex: 3;
+    display: flex;
+    flex-flow: row wrap;
+    height: 97vh;
+    background-color: #f1f1f1;
+    overflow-y: scroll;
+}
+
+main article {
+    flex: 4;
+}
+
+.pc-side{
+    flex: 1;
+}
+
+.main-article-text {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 0 0 2rem;
+}
+
+.me-img-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-article {
+    flex: 1 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: #f1f1f1;
+}
+
+.market_section {    
+    background-color: #ffffff;
+    height: auto;
+    padding: 1rem 1rem;
+    /* border-radius: 0px;
+    border-style: solid;
+    border-color: azure; */
+    box-shadow: 0px 0px 30px 10px #ededed;
+    width: 85%;
+
+    display:flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+    align-content: center;
+}
+
+.bottom-article > p {
+    margin: 0.5em 5em 0 5em;
+}
+
+footer {
+    height: 10vh;
+    color: white;
+    background-color: #3e2095;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1 100%;
+}
+
+.main-article-text h2 {
+    margin-bottom: 1em;
+}
+
+.main-article-text p {
+    margin-bottom: 1em;
+}
+
+.right-header .email {
+}
+
+.email {
+    /* text-transform: uppercase;
+    font-weight: 500; */
+    font-family: 'Saira Extra Condensed', serif;
+    /* font-size: 1.35rem; */
+}
+
+.nav-contact-link {
+    cursor: pointer;
+    color: white;
+}
+
+.nav-fa {
+    line-height: 2 !important;
+}

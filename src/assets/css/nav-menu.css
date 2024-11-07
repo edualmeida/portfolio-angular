@@ -1,0 +1,98 @@
+@import "https://fonts.googleapis.com/css?family=Press%20Start%202P";
+
+a {
+  text-decoration: none;
+  color: #fff090;
+}
+
+li {
+  color: #B3E22B;
+}
+
+.arrow i {
+  display: none;
+}
+
+.arrow {
+  position:relative;
+	display: block;
+  color: #fff090;
+}
+
+.arrow:hover {
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.arrow:hover i { 
+  display: block;
+  position: absolute;
+  top: 0.50em; 
+  left: -5em;
+}
+
+.img-profile {
+  max-width: 10rem;
+  max-height: 8rem;
+  border: 0.2rem solid rgba(255, 255, 255, 0.2); 
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+aside .profile {
+  margin-top: 3em;
+}
+
+.main-nav-left {
+  margin-top: 2rem;
+  flex: 6;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  gap: 2.5vmin;
+  margin-left: 2rem;
+  
+  font-family: 'Press Start 2P';
+  font-size: 1rem;
+  line-height: 2;
+  
+  text-transform: uppercase;
+}
+
+.nav-contact {
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+  color: #fff090;
+  background-color: #5a2be2;
+  margin: 0.5rem;
+  padding: 1rem 2rem 1rem 2rem;
+  align-items: center;
+  /* justify-content: center;
+  text-align: center; */
+}
+
+.nav-contact .email {
+  flex: 1 100%;
+}
+
+.nav-contact .fa {
+  font-size: 2.5rem;
+}
+
+aside .nav-empty {
+  margin-top: 1rem;
+}
+
+/* .nav-contact-container .nav-contact .fa-envelope-square {
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+.nav-contact-container .nav-contact .fa-envelope-square {
+  margin-right: 1rem;
+  margin-left: 1rem;
+} */

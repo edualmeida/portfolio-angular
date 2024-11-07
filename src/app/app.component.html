@@ -1,0 +1,48 @@
+<main>
+    <aside>
+        <span class="d-none d-lg-block profile">
+            <img class="img-fluid img-profile rounded-circle mx-auto mb-1" alt="" src="assets/img/me.png">
+        </span>
+        <ol class="main-nav-left">
+            <li><a class="arrow" routerLinkActive="active" routerLink="/"><i class="fa-solid fa-arrow-right"></i>About</a></li>
+            <li><a class="arrow" routerLink="/timeline"><i class="fa-solid fa-arrow-right"></i>Curriculum</a></li>
+            <li><a class="arrow" routerLink="/contact"><i class="fa-solid fa-arrow-right"></i>Contact</a></li>
+        </ol>       
+        <div class="nav-contact-container">
+            <div class="nav-contact">
+                <a href="https://www.linkedin.com/in/eduardo-augusto-carvalho-de-almeida-640a968/" target="_blank" rel="noopener noreferrer" class="nav-contact-link">
+                    <i class="fa fa-linkedin-square"></i>
+                </a>
+                <a href="https://github.com/edualmeida" target="_blank" rel="noopener noreferrer" class="nav-contact-link">
+                    <i class="fa fa-github-square"></i>
+                </a>
+                <a href="/contact" target="_blank" rel="noopener noreferrer" class="nav-contact-link">
+                    <i class="fa fa-envelope-square"></i>
+                </a>
+            </div>
+        </div>
+        <div class="nav-empty"></div>
+    </aside>
+    <article>
+        <header>
+            <div class="header-title typewriter">
+                <span>>Hello world</span>
+            </div>
+            <div class="header-middle"></div>
+            <div class="right-header">
+                <span class="email">developer.dublin&#64;gmail.com</span>
+                <i class="fa fa-envelope-square"></i>
+                <a href="https://www.linkedin.com/in/eduardo-augusto-carvalho-de-almeida-640a968/" target="_blank" rel="noopener noreferrer" class="nav-contact-link">
+                    <i class="fa fa-linkedin-square nav-fa"></i>
+                </a>
+                <a href="https://github.com/edualmeida" target="_blank" rel="noopener noreferrer" class="nav-contact-link">
+                    <i class="fa fa-github-square nav-fa"></i>
+                </a>
+            </div>
+        </header>
+        <div class="middle">
+            <router-outlet></router-outlet>
+        </div>
+    </article>
+    <app-layout-footer />
+</main>
